@@ -15,4 +15,4 @@ blowfish.class - Encrypt - Decrypt - PHP7
      ?>
      
 ### Todo:
-WordPress maeckert weil Funktionen schon vorhanden, wenn bereits von anderem Plugin genutzt.
+WordPress mäckert weil die Funktionen schon vorhanden sind, wenn sie bereits von einem anderem Plugin genutzt werden.
