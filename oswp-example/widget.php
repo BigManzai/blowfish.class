@@ -6,7 +6,12 @@
 ?>
 <p>Dies ist ein oswp blowfish.class Beispiel im Dashboard Widget!</p>
 <?php
-include("blowfish.class.php"); // WordPress maeckert weil Funktionen schon vorhanden, wenn bereits von anderem Plugin genutzt.
+// Schauen ob blowfish.class.php schon geladen ist.
+if (class_exists('Blowfish')) {
+	echo""; // blowfish.class.php ist schon geladen.
+} else {
+ include("blowfish.class.php");// blowfish.class.php nachladen.
+}
 
 $blowfish = new Blowfish("secret Key"); // "secret Key" ist der Verschluesselungswert.
 $cipher = $blowfish->Encrypt("Hello World"); //Encrypts 'Hello World'
