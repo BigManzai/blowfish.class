@@ -10,7 +10,7 @@
 if (class_exists('Blowfish')) {
 	echo""; // blowfish.class.php ist schon geladen.
 } else {
- include("blowfish.class.php");// blowfish.class.php nachladen.
+    include("blowfish.class.php");// blowfish.class.php nachladen.
 }
 
 $blowfish = new Blowfish("secret Key"); // "secret Key" ist der Verschluesselungswert.
