@@ -18,7 +18,7 @@ blowfish.class - Encrypt - Decrypt - PHP7
 WordPress mäckert weil die Funktionen schon vorhanden sind, wenn sie bereits von einem anderem Plugin genutzt werden.
 
      if (class_exists('Blowfish')) {
-	echo""; // blowfish.class.php ist schon geladen.
+	     echo""; // blowfish.class.php ist schon geladen.
      } else {
-    include("blowfish.class.php");// blowfish.class.php nachladen.
+         include("blowfish.class.php");// blowfish.class.php nachladen.
      }
